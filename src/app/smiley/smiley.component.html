@@ -1,0 +1,26 @@
+<h2>Smiley Face!!!</h2>
+
+<button style="margin-left: 10px;" (click)="face='happy'" class="btn btn-success">Happy</button>
+<button style="margin-left: 10px;"  (click)="face='laughing'" class="btn btn-success">Laughing</button>
+<button style="margin-left: 10px;"  (click)="face='noexpression'" class="btn btn-success">No_expression</button>
+<button style="margin-left: 10px;"  (click)="face='sad'" class="btn btn-success">sad</button>
+<button style="margin-left: 10px;"  (click)="face='rude'" class="btn btn-success">Rude</button>
+
+<div [ngSwitch]="face">
+<img *ngSwitchCase="'happy'" src="assets/happy.png" alt="">
+<img *ngSwitchCase="'laughing'"  src="assets/laughing.png" alt="">
+<img *ngSwitchCase="'noexpression'"  src="assets/noexpression.png" alt="">
+<img *ngSwitchCase="'sad'"  src="assets/sad.png" alt="">
+<img *ngSwitchCase="'rude'"  src="assets/rude.png" alt="">
+
+</div>
+
+<!-- 
+<img *ngIf="face == 'happy'" src="assets/happy.png" alt="">
+<img *ngIf="face == 'laughing'"  src="assets/laughing.png" alt="">
+<img *ngIf="face == 'noexpression'"  src="assets/noexpression.png" alt="">
+<img *ngIf="face == 'sad'"  src="assets/sad.png" alt="">
+<img *ngIf="face == 'rude'"  src="assets/rude.png" alt=""> -->
+
+
+

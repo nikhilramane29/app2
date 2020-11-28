@@ -1,0 +1,49 @@
+<h2>Employee List!!!</h2>
+
+
+
+
+<div class="employee" *ngFor="let employee of employees">
+
+    <div>ID: {{employee['id']}}</div>
+    <div>Name: {{employee['name']}}</div>
+    <div>Department: {{employee['department']}}</div>
+    <div>Role: {{employee['role']}}</div>
+    <div>Salary: {{employee['salary']}}</div>
+</div>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<div>ID: {{employee['id']}}</div>
+<div>Name: {{employee['name']}}</div>
+<div>Department: {{employee['department']}}</div>
+<div>Role: {{employee['role']}}</div>
+<div>Salary: {{employee['salary']}}</div>
+
+<hr>
+<hr>
+<hr>
+
+<div>ID: {{employees[0]['id']}}</div>
+<div>Name: {{employees[0]['name']}}</div>
+<div>Department: {{employees[0]['department']}}</div>
+<div>Role: {{employees[0]['role']}}</div>
+<div>Salary: {{employees[0]['salary']}}</div>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+<div *ngFor="let employee of employees">
+
+    <div>ID: {{employee['id']}}</div>
+    <div>Name: {{employee['name']}}</div>
+    <div>Department: {{employee['department']}}</div>
+    <div>Role: {{employee['role']}}</div>
+    <div>Salary: {{employee['salary']}}</div>
+</div>
+
